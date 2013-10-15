@@ -880,6 +880,8 @@ var path           = require('path'),
 
         // When you just say "grunt"
         grunt.registerTask("default", ['sass:compress', 'handlebars', 'concat']);
+
+        grunt.registerTask("heroku:production", ['init', 'prod']);
     };
 
 module.exports = configureGrunt;
